@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.numero{
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 8px ;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.btn{
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.good{
+    color: green;
+}
+
+.warning{
+    color: yellow;
+}
+
+.danger{
+    color: red;
+}
+
+.container{
+    max-width: 350px;
+    width: 100%;
+    display: block;
+    margin: 15% 33% auto;
+    background-color: rgb(40, 201, 112);
+    
+}
+
+.container h1{
+    padding: 30px;
+    text-decoration: underline;
+}
+
+label{
+    font-weight: bold;
+}
