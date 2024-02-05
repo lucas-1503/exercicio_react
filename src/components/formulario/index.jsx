@@ -9,37 +9,36 @@ const Frm = () =>{
 
     const calculaImc = () => {
         const imc = peso/(altura*altura)
-        
+        let resultado = ''
         if(imc <= 17 ){
             return(
-                resultado = `Seu IMC é: {(imc.toFixed(2))}. <span className='danger'>Você está muito abaixo do peso</span>`
+            <p>resultado = Seu IMC é: {(imc.toFixed(2))}. <span className='danger'>Você está muito abaixo do peso</span></p> 
             )
         } else if (imc <= 18.49 && imc > 17){
             return(
-                resultado = `Seu IMC é: {(imc.toFixed(2))}. <span className='warning'>Você está abaixo do peso</span> `
+                <p>resultado = Seu IMC é: {(imc.toFixed(2))}. <span className='warning'>Você está abaixo do peso</span> </p> 
             )
         } else if ( imc <= 24.99 && imc > 18.5) {
             return(
-                resultado = `Seu IMC é: {(imc.toFixed(2))}. <span className='good'>Você está com o peso normal</span>`
+                <p>resultado = Seu IMC é: {(imc.toFixed(2))}. <span className='good'>Você está com o peso normal</span></p> 
             )    
-        } else if (25 <= imc <= 29.99){
+        } else if (imc <= 25 && imc <= 29.99){
             return (
-                resultado = `Seu IMC é: {(imc.toFixed(2))}.<span className='warning'>Você está acima do peso</span>`
+                <p>resultado = Seu IMC é: {(imc.toFixed(2))}.<span className='warning'>Você está acima do peso</span></p>
             )
-        } else if (30 <= imc <= 34.99){
+        } else if (imc <= 30 && imc <= 34.99){
             return (
-                resultado = `Seu IMC é: {(imc.toFixed(2))}.<span className='danger'>Obesidade I</span>`
+                <p>resultado = Seu IMC é: {(imc.toFixed(2))}.<span className='danger'>Obesidade I</span></p>
             )
-        } else if (35 <= imc <= 39.99){
+        } else if (imc <= 35 && imc <= 39.99){
             return (
-                resultado = `Seu IMC é: {(imc.toFixed(2))}.<span className='danger'>Obesidade II (severa)</span>`
+                <p>resultado = Seu IMC é: {(imc.toFixed(2))}.<span className='danger'>Obesidade II (severa)</span></p>
             )
         } else {
             return (
-                resultado = `Seu IMC é: {(imc.toFixed(2))}.<span className='danger'>Obesidade III (mórbida)</span>`
+                <p>resultado =Seu IMC é: {(imc.toFixed(2))}.<span className='danger'>Obesidade III (mórbida)</span></p>
                 )
             }
-    return resultado
     }
 
     const verificar = () => {
